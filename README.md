@@ -33,10 +33,10 @@ Complementing a Strand of DNA: (REVC.py) <br><br>
 Given: A DNA string s of length at most 1000 bp <br>
 Return: The reverse complement s<sup>c</sup> of s <br><br>
 
-Sample Dataset:<br>
+<b>Sample Dataset:</b><br>
 AAAACCCGGT<br><br>
 
-Sample Output:<br>
+<b>Sample Output:</b><br>
 ACCGGGTTTT<br>
 
 ----------------------------------------------------------------------------
@@ -53,3 +53,19 @@ Return: the total number of rabbit pairs that will be presented after n months, 
 19<br>
 
 -------------------------------------------------------------------------
+
+Computing GC Content (GC.py)
+
+
+
+
+
+--------------------------------
+
+Counting Point Mutations (HAMM.py)
+
+------------------------------
+
+Translating RNA into Protein (PROT.py)
+
+-------------------------------------
