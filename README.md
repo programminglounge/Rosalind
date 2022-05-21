@@ -54,18 +54,98 @@ Return: the total number of rabbit pairs that will be presented after n months, 
 
 -------------------------------------------------------------------------
 
-Computing GC Content (GC.py)
+Computing GC Content (GC.py) <br><br>
 
+The GC-content of a DNA string is given by the percentage of symbols in the string that are 'C' or 'G'.<br>
 
+Given: At most 10 DNA strings in FASTA format (of length at most 1 kbp each)<br>
+Return: the ID of the string having the highest GC-content, followed by the GC-content of that string.<br><br>
 
+<b>Sample Dataset:</b><br>
 
+\>Rosalind_6404<br>
+CCTGCGGAAGATCGGCACTAGAATAGCCAGAACCGTTTCTCTGAGGCTTCCGGCCTTTCCCACTAATAATTCTGAGG<br>
+\>Rosalind_5959<br>
+CCATCGGTAGCGCATCCTTAGTCCAATTAAGTCCCTATCCAGGCGCTCCGCCGAAGGTCTATATCCATTTGTCAGCAGACACGC<br>
+\>Rosalind_0808<br>
+CCACCCTCGTGGTATGGCTAGGCATTCAGGAACCGGAGAACGCTTCAGACCAGCCCGGACTGGGAACCTGCGGGCAGTAGGTGGAAT<br>
+
+<b>Sample Output:</b><br>
+Rosalind_0808<br>
+60.919540<br>
 
 --------------------------------
 
-Counting Point Mutations (HAMM.py)
+Counting Point Mutations (HAMM.py)<br><br>
+
+Given: Two DNA strings s and t of equal length (not exceeding 1 kbp)<br>
+Return: The Hamming distance d<sub>H</sub>(s, t)<br>
+
+<b>Sample Dataset</b><br>
+
+GAGCCTACTAACGGGAT<br>
+CATCGTAATGACGGCCT<br>
+
+<b>Sample Output:</b><br>
+7
 
 ------------------------------
 
-Translating RNA into Protein (PROT.py)
+Translating RNA into Protein (PROT.py)<br><br>
+
+Given: An RNA string s corresponding to a strand of mRNA (of length at most 10 kbp)<br>
+Return: the proetein string encoded by s<br>
+
+<b>Sample Dataset:</b><br>
+AUGGCCAUGGCGCCCAGAACUGAGAUCAAUAGUACCCGUAUUAACGGGUGA<br>
+
+<b>Sample Output:</b><br>
+MAMAPRTEINSTRING<br>
 
 -------------------------------------
+
+Finding a Motif in DNA (SUBS.py)<br><br>
+
+Given: Two DNA strings s and t (each of length at most 1 kbp)<br>
+Return: All locations of t ass a substring of s.<br>
+
+<b>Sample Dataset:</b><br>
+GATATATGCATATACTT<br>
+ATAT<br>
+
+<b>Sample Output:</b><br>
+2 4 10<br>
+
+------------------------------------------
+
+Consensus and Profile (CONS.py)<br><br>
+
+Given: A collection of at most 10 DNA strings of equal length (at most 1 kbp) in FASTA format <br>
+Return: A consensus string and profile matrix for the collection. (If several possible consensus strings exist, then you may return any one of them.) <br>
+
+<b>Sample Dataset:</b> <br>
+
+\>Rosalind_1<br>
+ATCCAGCT<br>
+\>Rosalind_2<br>
+GGGCAACT <br>
+\>Rosalind_3 <br>
+ATGGATCT <br>
+\>Rosalind_4 <br>
+AAGCAACC <br>
+\>Rosalind_5 <br>
+TTGGAACT <br>
+\>Rosalind_6 <br>
+ATGCCATT <br>
+\>Rosalind_7 <br>
+ATGGCACT <br>
+
+<b>Sample Output:</b><br>
+
+ATGCAACT<br>
+A: 5 1 0 0 5 5 0 0<br>
+C: 0 0 1 4 2 0 6 1 <br>
+G: 1 1 6 3 0 1 0 0 <br>
+T: 1 5 0 0 0 1 1 6 <br>
+
+-------------------------------------------
