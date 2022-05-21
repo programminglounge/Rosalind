@@ -149,3 +149,28 @@ G: 1 1 6 3 0 1 0 0 <br>
 T: 1 5 0 0 0 1 1 6 <br>
 
 -------------------------------------------
+Calculating Expected Offspring (IEV.py)<br><br>
+
+Given: Six nonnegative integers, each of which does not exceed 20,000. The integers correspond to the number of couples
+in a population possessing each genotype pairing for a given factor. In order, the six given integers represent the number of couples having the following genotypes: <br>
+
+1. AA-AA<br>
+2. AA-Aa
+3. AA-aa
+4. Aa-Aa
+5. Aa-aa
+6. aa-aa
+
+Return: The expected number of offspring displaying the dominant phenotype in the next generation, under the assumption that every couple has exactly two offspring
+
+<b>Example Dataset:</b><br>
+1 0 0 1 0 1<br>
+
+<b>Example Output</b><br>
+3.5
+
+-----------------------------------------------
+
+Mendel's First Law (IPRB.py)<br><br>
+
+Given: Three positive integers k, m, and n, representing a population containing k+m+n organisms: k individuals are homozygous 
