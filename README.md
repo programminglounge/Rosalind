@@ -173,4 +173,40 @@ Return: The expected number of offspring displaying the dominant phenotype in th
 
 Mendel's First Law (IPRB.py)<br><br>
 
-Given: Three positive integers k, m, and n, representing a population containing k+m+n organisms: k individuals are homozygous 
+Given: Three positive integers k, m, and n, representing a population containing k+m+n organisms: k individuals are homozygous dominant for a factor, m are heterozygous, and n are homozygous recessive
+
+Return: The probability that two randomly selected mating organisms will produce an individual possessing a dominant allele. Assume that any two organisms can mate
+
+<b>Sample Dataset:</b><br>
+2 2 2<br>
+
+<b>Sample Output</b><br>
+0.78333
+
+----------------------------------------------------------------------
+Overlap Graphs (GRPH.py) <br><br>
+
+Given: A collection of DNA strings in Fasta format having total length at most 10 kbp<br>
+
+Return: The adjacency list corresponding to O<sub>3</sub>. You may return edges in any order<br>
+
+<b>Sample Dataset:</b><br>
+\>Rosalind_0498<br>
+AAATAAA<br>
+\>Rosalind_2391<br>
+AAATTTT<br>
+\>Rosalind_2323<br>
+TTTTCCC<br>
+\>Rosalind_0442<br>
+AAATCCC<br>
+\>Rosalind_5013<br>
+GGGTGGG<br>
+
+<b>Sample Output:</b><br>
+Rosalind_0498 Rosalind_2391<br>
+Rosalind_0498 Rosalind_0442<br>
+Rosalind_2391 Rosalind_2323<br>
+
+--------------------------------------------------------------------------
+
+
