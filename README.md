@@ -230,10 +230,10 @@ TCAATGCATGCATGCGGGTCTATATGCAT<br>
 
 ---------------------------------------------------------------------
 
-Calculating Protein Mass (PRTM.py)
+Calculating Protein Mass (PRTM.py) <br><br>
 
-Given: A protein string P of length at most 1000 aa
-Return: the total weight of P. Consult the monoisoptic mass table
+Given: A protein string P of length at most 1000 aa <br>
+Return: the total weight of P. Consult the monoisoptic mass table<br>
 
 <b>Sample Dataset:</b><br>
 SKADYEK<br>
@@ -243,3 +243,18 @@ SKADYEK<br>
 
 ---------------------------------------------------------------------
 
+Enumerating Gene orders (PERM.py) <br><br>
+
+Given: A positive integer n <=7
+Return: the total number of permutations of length n, followed by a list of all such permutations (in any order).
+
+<b>Sample Dataset:</b><br>
+3 <br>
+
+<b>Sample Output:</b><br>
+6<br> 1 2 3<br>
+1 3 2<br>
+2 1 3<br>
+2 3 1<br>
+3 1 2<br>
+3 2 1<br>
