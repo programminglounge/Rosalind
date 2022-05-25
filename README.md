@@ -209,4 +209,37 @@ Rosalind_2391 Rosalind_2323<br>
 
 --------------------------------------------------------------------------
 
+Locating Restriction Sites (REVP.py) <br><br>
+
+Given: A DNA string of length at most 1 kbp in FATSA format<br>
+Return: the position and length of every reverse palindrome in the string having length between 4 and 12. You may return these pairs in any order<br>
+
+<b>Sample Dataset:</b><br>
+\>Rosalind_24 <br>
+TCAATGCATGCATGCGGGTCTATATGCAT<br>
+
+<b> Sample Output:</b><br>
+4  6<br>
+5  4<br>
+6  6<br>
+7  4<br>
+17  4<br>
+18  4<br>
+20  6<br>
+21  4<br>
+
+---------------------------------------------------------------------
+
+Calculating Protein Mass (PRTM.py)
+
+Given: A protein string P of length at most 1000 aa
+Return: the total weight of P. Consult the monoisoptic mass table
+
+<b>Sample Dataset:</b><br>
+SKADYEK<br>
+
+<b>Sample Output:</b><br>
+821.392 <br>
+
+---------------------------------------------------------------------
 
