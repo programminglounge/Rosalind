@@ -258,3 +258,35 @@ Return: the total number of permutations of length n, followed by a list of all 
 2 3 1<br>
 3 1 2<br>
 3 2 1<br>
+
+------------------------------------------------------------------
+
+Finding a Spliced Motif (SSEQ.py) <br><br>
+
+Given: Two DNA strings s and t (each of length at most 1 kbp) in FASTA format<br>
+Return: one collection of indices of s in which the symbols of t appear as a subsequence of s. If multiple solutions exist,
+you may return any one.<br>
+
+<b>Sample Dataset:</b><br>
+\>Rosalind_14<br>
+ACGTACGTGACG<br>
+\>Rosalind_18<br>
+GTA<br>
+
+<b>Sample Output:</b><br>
+3  8  10
+
+---------------------------------------------------------------
+
+Partial Permutation (PPER.py) <br><br>
+
+Given: positive integers n and k such that 100>=n>0 and 10>=k>0<br>
+
+Return: the total number of partial permutations P(n, k) modulo 1000000 <br>
+
+<b>Sample Dataset:</b><br>
+21  7<br>
+
+<b>Sample Output: </b><br>
+51200<br>
+----------------------------------------------------------
