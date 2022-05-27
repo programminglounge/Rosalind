@@ -10,7 +10,7 @@ RNA_REVERSE_TABLE =
   length = len(stringRNA)
   if (length != 0):
     for i in range (len(stringRNA)):
-      result = result * RNA_REVERSE_TABLE[stringRNA[i]]
+      result = (result * RNA_REVERSE_TABLE[stringRNA[i]])%1000000
   else:
     result = 0
   print(result)
