@@ -289,4 +289,37 @@ Return: the total number of partial permutations P(n, k) modulo 1000000 <br>
 
 <b>Sample Output: </b><br>
 51200<br>
+
 ----------------------------------------------------------
+
+Inferring mRNA from Protein (MRNA.py) <br><br>
+
+Given: protein string of length at most 1000 aa <br>
+
+Return: The total number of different RNA strings from which the protein could have been translated, module 1000000 (Don't neglect the importance of the stop codon in protein translation.) <br>
+
+<b>Sample Dataset:</b><br>
+MA <br>
+
+<b>Sample Output:</b><br>
+12 <br>
+  
+-----------------------------------------------------  
+
+Transitions and Transversions (TRAN.PY)<br><br>
+
+Given: Two DNA strings s<sub>s</sub> and s<sub>2</sub> of equal length (at most 1 kbp).<br><br>
+
+Return: The transition/transversion ratio R(s<sub>1</sub>, s<sub>2</sub>).<br><br>
+
+<b>Sample Dataset:</b><br>
+\>Rosalind_0209<br>
+GCAACGCACAACGAAAACCCTTAGGGACTGGATTATTTCGTGATCGTTGTAGTTATTGGAAGTACGGGCATCAACCCAGTT<br>
+\>Rosalind_2200<br>
+TTATCTGACAAAGAAAGCCGTCAACGGCTGGATAATTTCGCGATCGTGCTGGTTACTGGCGGTACGAGTGTTCCTTTGGGT</br>
+
+<b>Sample Output</b><br>
+1.21428571429 <br>
+
+----------------------------------------------------
+
