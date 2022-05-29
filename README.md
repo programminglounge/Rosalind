@@ -323,3 +323,49 @@ TTATCTGACAAAGAAAGCCGTCAACGGCTGGATAATTTCGCGATCGTGCTGGTTACTGGCGGTACGAGTGTTCCTTTGGG
 
 ----------------------------------------------------
 
+Finding a Protein Motif (MPRT.py) <br><br>
+
+Given: at most 15 UniProt Protein Database access IDs <br>
+
+Return: for each rpotein possessing the N-glycosylation motif (N{P}[ST]{P}) output its given access ID followed by a list of locations in the protein string where the motif can be found. <br>
+
+<b>Sample Dataset:</b><br>
+A2Z669<br>
+B5ZC00<br>
+P07204_TRBM_HUMAN<br>
+P20840_SAG1_YEAST<br><br>
+
+<b>Sample Output:</b><br>
+B5ZC00<br>
+85 118 142 306 395<br>
+P07204_TRBM_HUMAN<br>
+47 115 116 382 409<br>
+P20840_SAG1_YEAST<br>
+79 109 135 248 306 348 364 402 485 501 614<br>
+
+----------------------------------------------------
+
+k-Mer Composition (KMER.py) <br><br>
+
+Given: A DNA string s in FASTA format (having length at most 100 kbp)
+
+Return: the 4-mer composition of S
+
+<b>Sample Dataset:</b><br>
+CTTCGAAAGTTTGGGCCGAGTCTTACAGTCGGTCTTGAAGCAAAGTAACGAACTCCACGG<br>
+CCCTGACTACCGAACCAGTTGTGAGTACTCAACTGGGTGAGAGTGCAGTCCCTATTGAGT<br>
+TTCCGAGACTCACCGGGATTTTCGATCCAGCCTGAGTCCAGTCTTGTGGCCAACTCACCA<br>
+AATGACGTTGGAATATCCCTGTCTAGCTCACGCAGTACTTAGTAAGAGGTCGCTGCAGCG<br>
+GGGCAAGGAGATCGGAAAATGTGCTCTATATGCGACTAAAGCTCCTAACTTACACGTAGA<br>
+CTTGCCCGTGTTAAAAACTCGGCTCACATGCTGTCTGCGGCTGGCTGTATACAGTATCTA<br>
+CCTAATACCCTTCAGTTCGCCGCACAAAAGCTGGGAGTTACCGCGGAAATCACAG<br>
+
+<b>Sample Output:</b><br>
+4 1 4 3 0 1 1 5 1 3 1 2 2 1 2 0 1 1 3 1 2 1 3 1 1 1 1 2 2 5 1 3 0 2 2 1 1 1 1 3 1 0 0 1 5 5 1 5 0 2 0 2 1 2 1 1 1 2 0 1 0 0 1 1 3 2 <br>
+1 0 3 2 3 0 0 2 0 8 0 0 1 0 2 1 3 0 0 0 1 4 3 2 1 1 3 1 2 1 3 1 2 1 2 1 1 1 2 3 2 1 1 0 1 1 3 2 1 2 6 2 1 1 1 2 3 3 3 2 3 0 3 2 1 1 <br>
+0 0 1 4 3 0 1 5 0 2 0 1 2 1 3 0 1 2 2 1 1 0 3 0 0 4 5 0 3 0 2 1 1 3 0 3 2 2 1 1 0 2 1 0 2 2 1 2 0 2 2 5 2 2 1 1 2 1 2 2 2 2 1 1 3 4 <br>
+0 2 1 1 0 1 2 2 1 1 1 5 2 0 3 2 1 1 2 2 3 0 3 0 1 3 1 2 3 0 2 1 2 2 1 2 3 0 1 2 3 1 1 3 1 0 1 1 3 0 2 1 2 2 0 2 1 1 <br>
+
+----------------------------------------------------------------------------------
+
+
