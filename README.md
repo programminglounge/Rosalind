@@ -368,4 +368,44 @@ CCTAATACCCTTCAGTTCGCCGCACAAAAGCTGGGAGTTACCGCGGAAATCACAG<br>
 
 ----------------------------------------------------------------------------------
 
+Introduction to the Bioinformatics Armory (INI.py) <br>
+
+Given: A DNA string s of length at most 1000 nt <br>
+Return: Four integers (seperated by spaces) counting the respective number of times that the symbols 'A', 'C', 'G' and 'T' occur in s
+
+<b>Sample Dataset:</b><br>
+AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC
+
+<b>Sample Output:</b> <br>
+20 12 17 21
+
+-----------------------------------------------------------------------------------------
+
+GenBank Introduction (GBK.py) <br>
+
+Given: A genus name, followed by two dates in YYYY/M/D format
+Return: The number of Nucleotide Genbank entries for the given genus that were published between the dates specified
+
+<b>Sample Dataset:</b><br>
+Anthoxantum<br>
+2003/7/25<br>
+2005/12/27 <br>
+
+<b>Sample Output:</b><br>
+7
+
+------------------------------------------------------------------------------
+
+Data Formats (FRMT.py)<br>
+
+Given: A collection of n (n <= 10) GenBank entry IDs
+Return: The shortest of the strings associated with the IDs in FASTA Format.
+
+Sample Dataset:
+FJ817486 JX069768 JX469983
+
+Sample Output:
+>JX469983.1 Zea mays subsp. mays clone UT3343 G2-like transcription factor mRNA, partial cds
+ATGATGTATCATGCGAAGAATTTTTCTGTGCCCTTTGCTCCGCAGAGGGCACAGGATAATGAGCATGCAA
+
 
