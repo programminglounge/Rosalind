@@ -374,7 +374,7 @@ Given: A DNA string s of length at most 1000 nt <br>
 Return: Four integers (seperated by spaces) counting the respective number of times that the symbols 'A', 'C', 'G' and 'T' occur in s
 
 <b>Sample Dataset:</b><br>
-AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC
+AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC<br>
 
 <b>Sample Output:</b> <br>
 20 12 17 21
@@ -383,8 +383,8 @@ AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC
 
 GenBank Introduction (GBK.py) <br>
 
-Given: A genus name, followed by two dates in YYYY/M/D format
-Return: The number of Nucleotide Genbank entries for the given genus that were published between the dates specified
+Given: A genus name, followed by two dates in YYYY/M/D format <br>
+Return: The number of Nucleotide Genbank entries for the given genus that were published between the dates specified<br>
 
 <b>Sample Dataset:</b><br>
 Anthoxantum<br>
@@ -396,15 +396,15 @@ Anthoxantum<br>
 
 ------------------------------------------------------------------------------
 
-Data Formats (FRMT.py)<br>
+Data Formats (FRMT.py)<br><br>
 
-Given: A collection of n (n <= 10) GenBank entry IDs
-Return: The shortest of the strings associated with the IDs in FASTA Format.
+Given: A collection of n (n <= 10) GenBank entry IDs<br>
+Return: The shortest of the strings associated with the IDs in FASTA Format.<br>
 
-Sample Dataset:
-FJ817486 JX069768 JX469983
+<b>Sample Dataset:</b><br>
+FJ817486 JX069768 JX469983<br>
 
-Sample Output:
+<b>Sample Output:</b><br>
 \>JX469983.1 Zea mays subsp. mays clone UT3343 G2-like transcription factor mRNA, partial cds
 ATGATGTATCATGCGAAGAATTTTTCTGTGCCCTTTGCTCCGCAGAGGGCACAGGATAATGAGCATGCAA
 GTAATATTGGAGGTATTGGTGGACCCAACATAAGCAACCCTGCTAATCCTGTAGGAAGTGGGAAACAACG
@@ -418,5 +418,20 @@ TCAGAAGCTTTCTGATTCACCTCCAAGCTTAGATGACTACCCAGAGAGCATGCAACCTTCTCCCAAGAAA
 CCAAGGATAGACGCATTATCACCAGATTCAGAGCGCGATACAACACAACCTGAATTCGAATCCCATTTGA
 TCGGTCCGTGGGATCACGGCATTGCATTCCCAGTGGAGGAGTTCAAAGCAGGCCCTGCTATGAGCAAGTC
 A
+
+-----------------------------------------------------------------------------
+Pairwise Global Alignment (NEED.py) <br><br>
+
+Given: Two GenBank IDs
+
+Return: The maximum global alignment score between the DNA strings associated with these IDs
+
+<b>Sample Dataset:</b><br>
+JX205496.1 JX469991.1<br>
+
+<b>Sample Output</b><br>
+257<br>
+
+----------------------------------------------------------------
 
 
