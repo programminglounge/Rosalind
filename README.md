@@ -2,7 +2,60 @@
 
 In this repostory I solve the following problems from the Rosalind website using Python as the preferred language of choice
 <br><br>
-Counting DNA Nucleotids (DNA.py) <br>
+
+<a href = #problemDNA> Counting DNA Nucleotids</a>
+
+<a href = #problemRNA> Transcribing DNA into RNA</a>
+
+<a href = #problemREVC> Complementing a Strand of DNA</a> 
+
+<a href = #problemFIB> Rabbits and Recurring Relations</a> 
+
+<a href = #problemGC> Computing GC Content</a>
+
+<a href = #problemHAMM> Counting Point Mutations</a> 
+
+<a href = #problemPROT>Translating RNA into Protein</a>
+
+<a href = #problemSUBS>Finding a Motif in DNA</a>
+
+<a href = #problemCONS> Consensus and Profile</a><br><br>
+
+<a href = #problemIEV> Calculating Expected Offspring</a> <br><br>
+
+<a href = #problemIPRB> Mendel's First Law </a><br><br>
+
+<a href = #problemGRPH> Overlap Graphs </a><br><br>
+
+<a href = #problemREVP>Locating Restriction Sites</a><br><br>
+
+<a href = #problemPRTM> Calculating Protein Mass</a><br><br>
+
+<a href = #problemPERM>Enumerating Gene orders </a> <br><br>
+
+<a href = #problemSSEQ> Finding a Spliced Motif</a> <br><br>
+
+<a href = #problemPPER> Partial Permutation</a><br><br>
+
+<a href = #problemMRNA> Inferring mRNA from Protein</a> <br><br>
+
+<a href = #problemTRAN> Transitions and Transversions</a><br><br>
+
+<a href = #problemMPRT> Finding a Protein Motif</a><br><br>
+
+<a href = #problemKMER> k-Mer Composition</a><br><br>
+
+<a href = #problemINI> Introduction to the Bioinformatics Armory</a><br><br>
+
+<a href = #problemGBK> GenBank Introduction</a><br><br>
+
+<a href = #problemFRMT> Data Formats</a><br><br>
+
+<a href = #problemNEED> Pairwise Global Alignment</a><br><br>
+
+-------------------------------------------------------------------
+
+<a id = "problemDNA"> Counting DNA Nucleotids</a> <br><br>
 
 Given: A DNA string s of length at most 1000 nt <br>
 Return: Four integers (seperated by spaces) counting the respective number of times that the symbols 'A', 'C', 'G' and 'T' occur in s
@@ -13,9 +66,12 @@ AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC
 <b>Sample Output:</b> <br>
 20 12 17 21
 
+<p><a href = "DNA.py"> Solution in Python </a></p>
+<p><a href = "DNA.cs"> Solution in C# </a></p>
+
 ---------------------------------------------------------------------
 
-Transcribing DNA into RNA: (RNA.py) <br><br>
+<a id = "problemRNA">Transcribing DNA into RNA</a><br><br>
 
 Given: a DNA string t having length at most 1000 nt<br> 
 Return: the transcribed RNA string of t<br><br>
@@ -26,9 +82,11 @@ GATGGAACTTGACTACGTAAATT<br><br>
 <b>Sample Output:</b><br>
 GAUGGAACUUGACUACGUAAAUU<br>
 
+<p><a href = "RNA.py"> Solution in Python </a></p>
+
 --------------------------------------------------------------------
 
-Complementing a Strand of DNA: (REVC.py) <br><br>
+<a id = "problemREVC">Complementing a Strand of DNA</a> <br><br>
 
 Given: A DNA string s of length at most 1000 bp <br>
 Return: The reverse complement s<sup>c</sup> of s <br><br>
@@ -39,9 +97,11 @@ AAAACCCGGT<br><br>
 <b>Sample Output:</b><br>
 ACCGGGTTTT<br>
 
+<p><a href = "REVC.py"> Solution in Python </a></p>
+
 ----------------------------------------------------------------------------
 
-Rabbits and Recurring Relations: (FIB.py) <br><br>
+<a id = "problemFIB"> Rabbits and Recurring Relations</a> <br><br>
 
 Given: positive integers n <=40 and k<=5 <br>
 Return: the total number of rabbit pairs that will be presented after n months, if we begin with 1 pair and in each generation, every pair of reproduction-age rabbits produces a litter of k rabbit pairs (instead of only 1 pair) <br><br>
@@ -52,9 +112,11 @@ Return: the total number of rabbit pairs that will be presented after n months, 
 <b>Sample Output:</b><br> 
 19<br>
 
+<p><a href = "FIB.py"> Solution in Python </a></p>
+
 -------------------------------------------------------------------------
 
-Computing GC Content (GC.py) <br><br>
+<a id = "problemGC"> Computing GC Content</a> <br><br>
 
 The GC-content of a DNA string is given by the percentage of symbols in the string that are 'C' or 'G'.<br>
 
@@ -74,9 +136,11 @@ CCACCCTCGTGGTATGGCTAGGCATTCAGGAACCGGAGAACGCTTCAGACCAGCCCGGACTGGGAACCTGCGGGCAGTAG
 Rosalind_0808<br>
 60.919540<br>
 
+<p><a href = "GC.py"> Solution in Python </a></p>
+
 --------------------------------
 
-Counting Point Mutations (HAMM.py)<br><br>
+<a id = "problemHAMM"> Counting Point Mutations</a> <br><br>
 
 Given: Two DNA strings s and t of equal length (not exceeding 1 kbp)<br>
 Return: The Hamming distance d<sub>H</sub>(s, t)<br>
@@ -89,9 +153,11 @@ CATCGTAATGACGGCCT<br>
 <b>Sample Output:</b><br>
 7
 
+<p><a href = "HAMM.py"> Solution in Python </a></p>
+
 ------------------------------
 
-Translating RNA into Protein (PROT.py)<br><br>
+<a id = "problemPROT">Translating RNA into Protein</a><br><br>
 
 Given: An RNA string s corresponding to a strand of mRNA (of length at most 10 kbp)<br>
 Return: the proetein string encoded by s<br>
@@ -102,9 +168,11 @@ AUGGCCAUGGCGCCCAGAACUGAGAUCAAUAGUACCCGUAUUAACGGGUGA<br>
 <b>Sample Output:</b><br>
 MAMAPRTEINSTRING<br>
 
+<p><a href = "PROT.py"> Solution in Python </a></p>
+
 -------------------------------------
 
-Finding a Motif in DNA (SUBS.py)<br><br>
+<a id = "problemSUBS">Finding a Motif in DNA</a><br><br>
 
 Given: Two DNA strings s and t (each of length at most 1 kbp)<br>
 Return: All locations of t ass a substring of s.<br>
@@ -116,9 +184,11 @@ ATAT<br>
 <b>Sample Output:</b><br>
 2 4 10<br>
 
+<p><a href = "SUBS.py"> Solution in Python </a></p>
+
 ------------------------------------------
 
-Consensus and Profile (CONS.py)<br><br>
+<a id = "problemCONS"> Consensus and Profile</a><br><br>
 
 Given: A collection of at most 10 DNA strings of equal length (at most 1 kbp) in FASTA format <br>
 Return: A consensus string and profile matrix for the collection. (If several possible consensus strings exist, then you may return any one of them.) <br>
@@ -148,8 +218,11 @@ C: 0 0 1 4 2 0 6 1 <br>
 G: 1 1 6 3 0 1 0 0 <br>
 T: 1 5 0 0 0 1 1 6 <br>
 
+<p><a href = "CONS.py"> Solution in Python </a></p>
+
 -------------------------------------------
-Calculating Expected Offspring (IEV.py)<br><br>
+
+<a id = "problemIEV"> Calculating Expected Offspring</a> <br><br>
 
 Given: Six nonnegative integers, each of which does not exceed 20,000. The integers correspond to the number of couples
 in a population possessing each genotype pairing for a given factor. In order, the six given integers represent the number of couples having the following genotypes: <br>
@@ -169,9 +242,11 @@ Return: The expected number of offspring displaying the dominant phenotype in th
 <b>Example Output</b><br>
 3.5
 
+<p><a href = "IEV.py"> Solution in Python </a></p>
+
 -----------------------------------------------
 
-Mendel's First Law (IPRB.py)<br><br>
+<a id = "problemIPRB"> Mendel's First Law </a><br><br>
 
 Given: Three positive integers k, m, and n, representing a population containing k+m+n organisms: k individuals are homozygous dominant for a factor, m are heterozygous, and n are homozygous recessive
 
@@ -183,8 +258,11 @@ Return: The probability that two randomly selected mating organisms will produce
 <b>Sample Output</b><br>
 0.78333
 
+<p><a href = "IPRB.py"> Solution in Python </a></p>
+
 ----------------------------------------------------------------------
-Overlap Graphs (GRPH.py) <br><br>
+
+<a id = "problemGRPH"> Overlap Graphs </a><br><br>
 
 Given: A collection of DNA strings in Fasta format having total length at most 10 kbp<br>
 
@@ -207,9 +285,11 @@ Rosalind_0498 Rosalind_2391<br>
 Rosalind_0498 Rosalind_0442<br>
 Rosalind_2391 Rosalind_2323<br>
 
+<p><a href = "GRPH.py"> Solution in Python</a></p>
+
 --------------------------------------------------------------------------
 
-Locating Restriction Sites (REVP.py) <br><br>
+<a id = "problemREVP">Locating Restriction Sites</a><br><br>
 
 Given: A DNA string of length at most 1 kbp in FATSA format<br>
 Return: the position and length of every reverse palindrome in the string having length between 4 and 12. You may return these pairs in any order<br>
@@ -228,9 +308,11 @@ TCAATGCATGCATGCGGGTCTATATGCAT<br>
 20  6<br>
 21  4<br>
 
+<p><a href = "REVP.py">Solution in Python</a></p>
+
 ---------------------------------------------------------------------
 
-Calculating Protein Mass (PRTM.py) <br><br>
+<a id = "problemPRTM"> Calculating Protein Mass</a><br><br>
 
 Given: A protein string P of length at most 1000 aa <br>
 Return: the total weight of P. Consult the monoisoptic mass table<br>
@@ -241,9 +323,11 @@ SKADYEK<br>
 <b>Sample Output:</b><br>
 821.392 <br>
 
+<p><a href = "PRTM.py">Solution in Python</a></p>
+
 ---------------------------------------------------------------------
 
-Enumerating Gene orders (PERM.py) <br><br>
+<a id = "problemPERM">Enumerating Gene orders </a> <br><br>
 
 Given: A positive integer n <=7
 Return: the total number of permutations of length n, followed by a list of all such permutations (in any order).
@@ -259,9 +343,11 @@ Return: the total number of permutations of length n, followed by a list of all 
 3 1 2<br>
 3 2 1<br>
 
+<p><a href = "PERM.py">Solution in Python</a></p>
+
 ------------------------------------------------------------------
 
-Finding a Spliced Motif (SSEQ.py) <br><br>
+<a id = "problemSSEQ"> Finding a Spliced Motif</a> <br><br>
 
 Given: Two DNA strings s and t (each of length at most 1 kbp) in FASTA format<br>
 Return: one collection of indices of s in which the symbols of t appear as a subsequence of s. If multiple solutions exist,
@@ -276,9 +362,11 @@ GTA<br>
 <b>Sample Output:</b><br>
 3  8  10
 
+<p><a href = "SSEQ.py">Solution in Python</a></p>
+
 ---------------------------------------------------------------
 
-Partial Permutation (PPER.py) <br><br>
+<a id = "problemPPER"> Partial Permutation</a><br><br>
 
 Given: positive integers n and k such that 100>=n>0 and 10>=k>0<br>
 
@@ -290,9 +378,11 @@ Return: the total number of partial permutations P(n, k) modulo 1000000 <br>
 <b>Sample Output: </b><br>
 51200<br>
 
+<p><a href = "PPER.py">Solution in Python</a></p>
+
 ----------------------------------------------------------
 
-Inferring mRNA from Protein (MRNA.py) <br><br>
+<a id = "problemMRNA"> Inferring mRNA from Protein</a> <br><br>
 
 Given: protein string of length at most 1000 aa <br>
 
@@ -303,10 +393,12 @@ MA <br>
 
 <b>Sample Output:</b><br>
 12 <br>
-  
+
+<p><a href = "MRNA.py">Solution in Python</a></p>
+
 -----------------------------------------------------  
 
-Transitions and Transversions (TRAN.PY)<br><br>
+<a id = "problemTRAN"> Transitions and Transversions</a><br><br>
 
 Given: Two DNA strings s<sub>s</sub> and s<sub>2</sub> of equal length (at most 1 kbp).<br><br>
 
@@ -321,9 +413,11 @@ TTATCTGACAAAGAAAGCCGTCAACGGCTGGATAATTTCGCGATCGTGCTGGTTACTGGCGGTACGAGTGTTCCTTTGGG
 <b>Sample Output</b><br>
 1.21428571429 <br>
 
+<p><a href = "TRAN.py">Solution in Python</a></p>
+
 ----------------------------------------------------
 
-Finding a Protein Motif (MPRT.py) <br><br>
+<a id = "problemMPRT"> Finding a Protein Motif</a><br><br>
 
 Given: at most 15 UniProt Protein Database access IDs <br>
 
@@ -343,9 +437,11 @@ P07204_TRBM_HUMAN<br>
 P20840_SAG1_YEAST<br>
 79 109 135 248 306 348 364 402 485 501 614<br>
 
+<p><a href = "MPRT.py">Solution in Python</a></p>
+
 ----------------------------------------------------
 
-k-Mer Composition (KMER.py) <br><br>
+<a id = "problemKMER"> k-Mer Composition</a><br><br>
 
 Given: A DNA string s in FASTA format (having length at most 100 kbp)
 
@@ -366,9 +462,11 @@ CCTAATACCCTTCAGTTCGCCGCACAAAAGCTGGGAGTTACCGCGGAAATCACAG<br>
 0 0 1 4 3 0 1 5 0 2 0 1 2 1 3 0 1 2 2 1 1 0 3 0 0 4 5 0 3 0 2 1 1 3 0 3 2 2 1 1 0 2 1 0 2 2 1 2 0 2 2 5 2 2 1 1 2 1 2 2 2 2 1 1 3 4 <br>
 0 2 1 1 0 1 2 2 1 1 1 5 2 0 3 2 1 1 2 2 3 0 3 0 1 3 1 2 3 0 2 1 2 2 1 2 3 0 1 2 3 1 1 3 1 0 1 1 3 0 2 1 2 2 0 2 1 1 <br>
 
+<p><a href = "KMER.py">Solution in Python</a></p>
+
 ----------------------------------------------------------------------------------
 
-Introduction to the Bioinformatics Armory (INI.py) <br>
+<a id = "problemINI"> Introduction to the Bioinformatics Armory</a><br><br>
 
 Given: A DNA string s of length at most 1000 nt <br>
 Return: Four integers (seperated by spaces) counting the respective number of times that the symbols 'A', 'C', 'G' and 'T' occur in s
@@ -377,11 +475,13 @@ Return: Four integers (seperated by spaces) counting the respective number of ti
 AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC<br>
 
 <b>Sample Output:</b> <br>
-20 12 17 21
+20 12 17 21<br>
+
+<p><a href = "INI.py">Solution in Python</a></p>
 
 -----------------------------------------------------------------------------------------
 
-GenBank Introduction (GBK.py) <br>
+<a id = "problemGBK"> GenBank Introduction</a><br><br>
 
 Given: A genus name, followed by two dates in YYYY/M/D format <br>
 Return: The number of Nucleotide Genbank entries for the given genus that were published between the dates specified<br>
@@ -392,11 +492,13 @@ Anthoxantum<br>
 2005/12/27 <br>
 
 <b>Sample Output:</b><br>
-7
+7<br>
+
+<p><a href = "GBK.py">Solution in Python</a></p>
 
 ------------------------------------------------------------------------------
 
-Data Formats (FRMT.py)<br><br>
+<a id = "problemFRMT"> Data Formats</a><br><br>
 
 Given: A collection of n (n <= 10) GenBank entry IDs<br>
 Return: The shortest of the strings associated with the IDs in FASTA Format.<br>
@@ -419,8 +521,11 @@ CCAAGGATAGACGCATTATCACCAGATTCAGAGCGCGATACAACACAACCTGAATTCGAATCCCATTTGA
 TCGGTCCGTGGGATCACGGCATTGCATTCCCAGTGGAGGAGTTCAAAGCAGGCCCTGCTATGAGCAAGTC
 A
 
+<p><a href = "FRMT.py">Solution in Python</a></p>
+
 -----------------------------------------------------------------------------
-Pairwise Global Alignment (NEED.py) <br><br>
+
+<a id = "problemNEED"> Pairwise Global Alignment</a><br><br>
 
 Given: Two GenBank IDs
 
@@ -432,6 +537,6 @@ JX205496.1 JX469991.1<br>
 <b>Sample Output</b><br>
 257<br>
 
+<p><a href = "NEED.py">Solution in Python</a></p>
+
 ----------------------------------------------------------------
-
-
