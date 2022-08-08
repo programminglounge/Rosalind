@@ -1,6 +1,6 @@
 # Rosalind
 
-In this repostory I solve the following problems from the Rosalind website using Python as the preferred language of choice
+In this repostory I solve the following problems from the Rosalind website using Python as the preferred language of choice but I also try to learn the limits of other languages like C# and C++.
 <br><br>
 
 <a href = #problemDNA> Counting DNA Nucleotids</a>
@@ -19,39 +19,47 @@ In this repostory I solve the following problems from the Rosalind website using
 
 <a href = #problemSUBS>Finding a Motif in DNA</a>
 
-<a href = #problemCONS> Consensus and Profile</a><br><br>
+<a href = #problemCONS> Consensus and Profile</a>
 
-<a href = #problemIEV> Calculating Expected Offspring</a> <br><br>
+<a href = #problemIEV> Calculating Expected Offspring</a> 
 
-<a href = #problemIPRB> Mendel's First Law </a><br><br>
+<a href = #problemIPRB> Mendel's First Law </a>
 
-<a href = #problemGRPH> Overlap Graphs </a><br><br>
+<a href = #problemGRPH> Overlap Graphs </a>
 
-<a href = #problemREVP>Locating Restriction Sites</a><br><br>
+<a href = #problemREVP>Locating Restriction Sites</a>
 
-<a href = #problemPRTM> Calculating Protein Mass</a><br><br>
+<a href = #problemPRTM> Calculating Protein Mass</a>
 
-<a href = #problemPERM>Enumerating Gene orders </a> <br><br>
+<a href = #problemPERM>Enumerating Gene orders </a> 
 
-<a href = #problemSSEQ> Finding a Spliced Motif</a> <br><br>
+<a href = #problemSSEQ> Finding a Spliced Motif</a> 
 
-<a href = #problemPPER> Partial Permutation</a><br><br>
+<a href = #problemPPER> Partial Permutation</a>
 
-<a href = #problemMRNA> Inferring mRNA from Protein</a> <br><br>
+<a href = #problemMRNA> Inferring mRNA from Protein</a>
 
-<a href = #problemTRAN> Transitions and Transversions</a><br><br>
+<a href = #problemTRAN> Transitions and Transversions</a>
 
-<a href = #problemMPRT> Finding a Protein Motif</a><br><br>
+<a href = #problemMPRT> Finding a Protein Motif</a>
 
-<a href = #problemKMER> k-Mer Composition</a><br><br>
+<a href = #problemKMER> k-Mer Composition</a>
 
-<a href = #problemINI> Introduction to the Bioinformatics Armory</a><br><br>
+<a href = #problemINI> Introduction to the Bioinformatics Armory</a>
 
-<a href = #problemGBK> GenBank Introduction</a><br><br>
+<a href = #problemGBK> GenBank Introduction</a>
 
-<a href = #problemFRMT> Data Formats</a><br><br>
+<a href = #problemFRMT> Data Formats</a>
 
-<a href = #problemNEED> Pairwise Global Alignment</a><br><br>
+<a href = #problemNEED> Pairwise Global Alignment</a>
+
+<a href = #problemCORR> Error Correction in Reads</a>
+
+<a href = #problemLONG> Genome Assembly as Shortest Superstring</a>
+
+<a href = #problemLGIS> Longest Increasing Subsequence</a>
+
+<a href = #problemSETO> Introduction to Set Operations</a>
 
 -------------------------------------------------------------------
 
@@ -540,3 +548,131 @@ JX205496.1 JX469991.1<br>
 <p><a href = "NEED.py">Solution in Python</a></p>
 
 ----------------------------------------------------------------
+
+<a id = "problemCORR">Error Correction in Reads</a> <br><br>
+
+Given: A collection of up to 1000 reads of equal length (at most 50 bp) in FASTA format. Some of these reads were generated with a single-nucleotide error. For each read s in the dataset, one of the following applies
+<ul><li> s was correctly sequenced and appears in the dataset at least twice (possibly as a reverse complement)</li>
+<li> s is incorrect, it appears in the dataset exactly once, and its hamming distance is 1 with respect to exactly one correct read in the dataset (or its reverse complement)</li></ul> <br>
+
+Return: A list of all corrections in the form "[old read]->[new read]". (Each correction must be a single symbol substitution and you may return the corrections in any order.)
+
+<b>Sample Dataset:</b><br>
+\>Rosalind_52 <br>
+TCATC <br>
+\>Rosalind_44 <br>
+TTCAT <br>
+\>Rosalind_68 <br>
+TCATC <br>
+\>Rosalind_28 <br>
+TGAAA <br>
+\>Rosalind_95 <br>
+GAGGA <br>
+\>Rosalind_66 <br>
+TTTCA <br>
+\>Rosalind_33 <br>
+ATCAA <br>
+\>Rosalind_21 <br>
+TTGAT <br>
+\>Rosalind_18 <br>
+TTTCC <br>
+
+<b>Sample Output:</b><br>
+TTCAT->TTGAT<br>
+GAGGA->GATGA<br>
+TTTCC->TTTCA<br>
+
+<p><a href = "CORR.cs">Solution in C#</a></p>
+
+------------------------------------------------------------------------
+
+<a id = "problemLONG"> Genome Assembly as Shortest Superstring</a><br><br>
+
+Given: At most 50 DNA strings of approximately equal length, not exceeding 1 kbp, in FASTA format (which represents reads deriving from the same strand of a single linear chromosome).
+
+The dataset is guaranteed to satisfy the following condition: the exists a unique way to reconstruct the entire chromosome from these reads by gluing together pairs of reads that overlap by more than half their length. <br>
+
+Return: A shortest superstring containing all the given strings (thus corresponding to a reconstructed chromosome). <br>
+
+
+<b>Sample Dataset:</b><br>
+\>Rosalind_56 <br>
+ATTAGACCTG <br>
+\>Rosalind_57 <br>
+CCTGCCGGAA <br>
+\>Rosalind_58 <br>
+AGACCTGCCG <br>
+\>Rosalind_59 <br>
+GCCGGAATAC <br>
+
+<b>Sample Output:</b><br>
+ATTAGACCTGCCGGAATAC<br>
+
+<p><a href = "LONG.cs">Solution in C#</a></p>
+<p><a href = "LONG.cpp">Solution in C++</a></p>
+
+--------------------------------------------------------------------
+
+<a id = "problemLGIS"> Longest Increasing Subsequence</a><br><br>
+
+Given: A positive integer n <= 10000 followed by a permutation p of length n. <br>
+
+Return: A longest increasing subsequence of p, followed by a longest decreasing subsequence of p. <br>
+
+<b>Sample Dataset:</b><br>
+5<br>
+5 1 4 2 3<br>
+
+<b>Sample Output:</b><br>
+1 2 3<br>
+5 4 2<br>
+
+<p><a href = "LGIS.cs">Solution in C#</a></p>
+<p><a href = "LGIS.cpp">Solution in C++</a></p>
+
+------------------------------------------------------------------------
+
+<a id = "problemSETO"> Introduction to Set Operations</a><br><br>
+
+Given: A positive integer n (n <=20000) and two subsets A and B of {1, 2, ... n} <br>
+
+Return : Six sets A &cup B, A &cap; &#8745; &#x2229;  B, A - B, B - A, A' and B'(where set complements are taken with respect to {1, 2, ..., n} <br>
+
+<b>Sample Dataset:</b><br>
+10<br>
+{1, 2, 3, 4, 5}<br>
+{2, 8, 5, 10}<br>
+
+<b>Sample Output:</b><br>
+{1, 2, 3, 4, 5, 8, 10}<br>
+{2, 5}<br>
+{1, 3, 4}<br>
+{8, 10}<br>
+{8, 9, 10, 6, 7}<br>
+{1, 3, 4, 6, 7, 9}<br>
+
+<p><a href = "SETO.cs">Solution in C#</a></p>
+<p><a href = "SETO.cpp">Solution in C++</a></p>
+
+-------------------------------------------------------------------
+
+<a id = "problemSPEC"> Inferring Protein from Spectrum</a><br><br>
+
+Given: A list L of n (n <= 100) positive real numbers. <br>
+
+Return: A protein string of length n-1 whose prefix spectrum is equal to L (if multiple solutions exist, you may output any of them). 
+
+<b>Sample Dataset:</b><br>
+3524.8542<br>
+3710.9335<br>
+3841.974<br>
+3970.0326<br>
+4057.0646<br>
+
+<b>Sample Output:</b><br>
+WMQS<br>
+
+<p><a href = "SPEC.cs">Solution in C#</a></p>
+<p><a href = "SPEC.cpp">Solution in C++</a></p>
+
+-------------------------------------------------------------
