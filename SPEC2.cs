@@ -5,7 +5,7 @@ public class Program
     List<string> x = inferring();
     for (int i = 0; i<x.Count; i++)
     {
-      Console.WriteLine(x[i];
+      Console.WriteLine(x[i]);
     }
   }
   public static List<string> inferring()
