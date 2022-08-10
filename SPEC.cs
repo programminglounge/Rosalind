@@ -67,6 +67,7 @@ public class Program
     res.Add(186.0793, strings[17]);
     strings[18].Add("Y");
     res.Add(163.0633, strings[18]);
+    string my_result = "";
     for (int i = 0; i<differences.Count; i++)
     {
       if (res.ContainsKey(differences[i]))
